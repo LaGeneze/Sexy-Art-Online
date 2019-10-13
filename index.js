@@ -391,7 +391,7 @@ bot.on('message', function (message){
 
     
 
-bot.login('NjMxNDM3OTUyNTIxNjAxMDM0.XaGQXA.08AwJMXl4oGXCCeb0gLatQSol70')
+bot.login(process.env.TOKEN)
 
 
 
