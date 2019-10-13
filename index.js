@@ -1,18 +1,14 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client()
-const rando_imgs_Asuna = [
-'https://pbs.twimg.com/media/D-Ko1AVX4AIZrHH',
-'http://matome.anhona.com/wp-content/uploads/2012/11/20121111sao081.jpg',
-'https://static6.hentai-image.com/upload/20180530/452/461839/8.jpg',
-]
 
-var NombreImageAsuna = 10;
+var NombreImageAsuna = 18;
 var NombreImageLeafa = 6;
 var NombreImageSinon = 7;
 var NombreImageAlice = 3;
 var NombreImageLisbeth = 5;
 var NombreImageYuuki = 3;
-var NombreImageAll = 6;
+var NomreImageSilica = 7;
+var NombreImageAll = 7;
 
 var NombreAleatoireAsuna = Math.floor(Math.random() * NombreImageAsuna);
 var NombreAleatoireLeafa = Math.floor(Math.random() * NombreImageLeafa);
@@ -20,7 +16,9 @@ var NombreAleatoireSinon = Math.floor(Math.random() * NombreImageSinon);
 var NombreAleatoireAlice = Math.floor(Math.random() * NombreImageAlice);
 var NombreAleatoireLisbeth = Math.floor(Math.random() * NombreImageLisbeth);
 var NombreAleatoireYuuki = Math.floor(Math.random() * NombreImageYuuki);
+var NombreAleatoireSilica = Math.floor(Math.random() * NombreImageSilica);
 var NombreAleatoireAll = Math.floor(Math.random() * NombreImageAll);
+
 
 var reponse;
 
@@ -31,7 +29,19 @@ bot.on('ready', function(){
 
 bot.on('message', function (message){
 	if (message.content === '>help'){
-		message.channel.send('Commandes (séparé par un ; ) : >Asuna ; >Leafa ; >Sinon ; >Alice ; >Lisbeth ; >Yuuki ; >All')
+		let EmbedHelp = new Discord.RichEmbed()
+		.setDescription("VOICI TOUTES LES COMMANDES DU BOT SEXY ART ONLINE :")
+		.setColor("#1CFF1C")
+		.addField(">Asuna :", "Envoie des images aléatoires d'Asuna")
+		.addField(">Leafa :", "Envoie des images aléatoires de Leafa")
+		.addField(">Sinon :", "Envoie des images aléatoires de Sinon")
+		.addField(">Alice :", "Envoie des images aléatoires d'Alice")
+		.addField(">Lisbeth :", "Envoie des images aléatoires de Lisbeth")
+		.addField(">Yuuki :", "Envoie des images aléatoires de Yuuki")
+		.addField(">Silica :", "Envoie des images aléatoires de Silica")
+		.addField(">All :", "Envoie des images aléatoires de plusieurs personnages")
+		.setFooter("Sur ce : BON AMUSEMENT :Yum: !")
+		message.channel.send(EmbedHelp)
 	}
 
 
@@ -109,10 +119,74 @@ bot.on('message', function (message){
 					NombreAleatoireAsuna = ''
 					NombreAleatoireAsuna = Math.floor(Math.random() * NombreImageAsuna)
 					console.log("Variable Random effectué")
-				}
+				}else{
+					if(NombreAleatoireAsuna === 10){
+					message.channel.send('https://DataBaseServeur.000webhostapp.com/Asuna11.jpg')
+					console.log("Commandes effectué")
+					NombreAleatoireAsuna = ''
+					NombreAleatoireAsuna = Math.floor(Math.random() * NombreImageAsuna)
+					console.log("Variable Random effectué")
+				}else{
+					if(NombreAleatoireAsuna === 11){
+					message.channel.send('https://DataBaseServeur.000webhostapp.com/Asuna12.jpg')
+					console.log("Commandes effectué")
+					NombreAleatoireAsuna = ''
+					NombreAleatoireAsuna = Math.floor(Math.random() * NombreImageAsuna)
+					console.log("Variable Random effectué")
+				}else{
+					if(NombreAleatoireAsuna === 12){
+					message.channel.send('https://DataBaseServeur.000webhostapp.com/Asuna13.jpeg')
+					console.log("Commandes effectué")
+					NombreAleatoireAsuna = ''
+					NombreAleatoireAsuna = Math.floor(Math.random() * NombreImageAsuna)
+					console.log("Variable Random effectué")
+				}else{
+					if(NombreAleatoireAsuna === 13){
+					message.channel.send('https://DataBaseServeur.000webhostapp.com/Asuna14.jpg')
+					console.log("Commandes effectué")
+					NombreAleatoireAsuna = ''
+					NombreAleatoireAsuna = Math.floor(Math.random() * NombreImageAsuna)
+					console.log("Variable Random effectué")
+				}else{
+					if(NombreAleatoireAsuna === 14){
+					message.channel.send('https://DataBaseServeur.000webhostapp.com/Asuna15.jpg')
+					console.log("Commandes effectué")
+					NombreAleatoireAsuna = ''
+					NombreAleatoireAsuna = Math.floor(Math.random() * NombreImageAsuna)
+					console.log("Variable Random effectué")
+				}else{
+					if(NombreAleatoireAsuna === 15){
+					message.channel.send('https://DataBaseServeur.000webhostapp.com/Asuna16.jpeg')
+					console.log("Commandes effectué")
+					NombreAleatoireAsuna = ''
+					NombreAleatoireAsuna = Math.floor(Math.random() * NombreImageAsuna)
+					console.log("Variable Random effectué")
+				}else{
+					if(NombreAleatoireAsuna === 16){
+					message.channel.send('https://DataBaseServeur.000webhostapp.com/Asuna17.jpeg')
+					console.log("Commandes effectué")
+					NombreAleatoireAsuna = ''
+					NombreAleatoireAsuna = Math.floor(Math.random() * NombreImageAsuna)
+					console.log("Variable Random effectué")
+				}else{
+					if(NombreAleatoireAsuna === 17){
+					message.channel.send('https://DataBaseServeur.000webhostapp.com/Asuna18.jpg')
+					console.log("Commandes effectué")
+					NombreAleatoireAsuna = ''
+					NombreAleatoireAsuna = Math.floor(Math.random() * NombreImageAsuna)
+					console.log("Variable Random effectué")
+}
+}
+}
+}
+}
+}
+}
+}
 }
 }
 } 
+}
 }
 }
 }
@@ -328,6 +402,64 @@ bot.on('message', function (message){
 }
 })
 bot.on('message', function (message){
+		if (message.content === '>Silica'){
+						if(NombreAleatoireSilica === 0){
+						message.channel.send('https://DataBaseServeur.000webhostapp.com/Silica01.jpeg')
+						console.log("Commandes effectué")
+						NombreAleatoireSilica = ''
+						NombreAleatoireSilica = Math.floor(Math.random() * NombreImageSilica)
+						console.log("Variable Random effectué")
+					}else{
+						if(NombreAleatoireSilica === 1){
+						message.channel.send('https://DataBaseServeur.000webhostapp.com/Silica02.jpg')
+						console.log("Commandes effectué")
+						NombreAleatoireSilica = ''
+						NombreAleatoireSilica = Math.floor(Math.random() * NombreImageSilica)
+						console.log("Variable Random effectué")
+					}else{
+						if(NombreAleatoireSilica === 2){
+						message.channel.send('https://DataBaseServeur.000webhostapp.com/Silica03.jpeg')
+						console.log("Commandes effectué")
+						NombreAleatoireSilica = ''
+						NombreAleatoireSilica = Math.floor(Math.random() * NombreImageSilica)
+						console.log("Variable Random effectué")
+					}else{
+						if(NombreAleatoireSilica === 3){
+						message.channel.send('https://DataBaseServeur.000webhostapp.com/Silica04.jpg')
+						console.log("Commandes effectué")
+						NombreAleatoireSilica = ''
+						NombreAleatoireSilica = Math.floor(Math.random() * NombreImageSilica)
+						console.log("Variable Random effectué")
+					}else{
+						if(NombreAleatoireSilica === 4){
+						message.channel.send('https://DataBaseServeur.000webhostapp.com/Silica05.jpg')
+						console.log("Commandes effectué")
+						NombreAleatoireSilica = ''
+						NombreAleatoireSilica = Math.floor(Math.random() * NombreImageSilica)
+						console.log("Variable Random effectué")
+					}else{
+						if(NombreAleatoireSilica === 5){
+						message.channel.send('https://DataBaseServeur.000webhostapp.com/Silica06.jpeg')
+						console.log("Commandes effectué")
+						NombreAleatoireSilica = ''
+						NombreAleatoireSilica = Math.floor(Math.random() * NombreImageSilica)
+						console.log("Variable Random effectué")
+					}else{
+						if(NombreAleatoireSilica === 6){
+						message.channel.send('https://DataBaseServeur.000webhostapp.com/Silica07.jpg')
+						console.log("Commandes effectué")
+						NombreAleatoireSilica = ''
+						NombreAleatoireSilica = Math.floor(Math.random() * NombreImageSilica)
+						console.log("Variable Random effectué")
+}
+}
+}
+}
+}
+}
+}
+})
+bot.on('message', function (message){
 		if (message.content === '>All'){
 						if(NombreAleatoireAll === 0){
 						message.channel.send('https://DataBaseServeur.000webhostapp.com/All01.png')
@@ -370,6 +502,14 @@ bot.on('message', function (message){
 						NombreAleatoireAll = ''
 						NombreAleatoireAll = Math.floor(Math.random() * NombreImageAll)
 						console.log("Variable Random effectué")
+					}else{
+						if(NombreAleatoireAll === 6){
+						message.channel.send('https://DataBaseServeur.000webhostapp.com/All07.jpeg')
+						console.log("Commandes effectué")
+						NombreAleatoireAll = ''
+						NombreAleatoireAll = Math.floor(Math.random() * NombreImageAll)
+						console.log("Variable Random effectué")
+					}
 }
 }
 }
@@ -378,30 +518,5 @@ bot.on('message', function (message){
 }
 }
 })
-	//if (message.content === '>Asuna'){
-		//if (nombreAleatoire = 1){
-		//	reponse = message.channel.send('https://pbs.twimg.com/media/D-Ko1AVX4AIZrHH.jpg')
-		//}
-		//}else{
-			//reponse = message.channel.send('http://matome.anhona.com/wp-content/uploads/2012/11/20121111sao081.jpg')
-		//}
-	//}
-//)
-
-
-    
 
 bot.login(process.env.TOKEN)
-
-
-
-
-
-//if(nombreAleatoire = 1){
-	   	 //	reponse = message.channel.send('1ère reponse')
-		//} else {
-	    //	reponse = message.channel.send('2ème réponse')
-		//}
-
-
-		//'message', message =>
