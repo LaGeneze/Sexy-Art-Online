@@ -40,7 +40,7 @@ bot.on('message', function (message){
 		.addField(">Yuuki :", "Envoie des images aléatoires de Yuuki")
 		.addField(">Silica :", "Envoie des images aléatoires de Silica")
 		.addField(">All :", "Envoie des images aléatoires de plusieurs personnages")
-		.setFooter("Sur ce : BON AMUSEMENT :Yum: !")
+		.setDescription("Sur ce : BON AMUSEMENT :P !")
 		message.channel.send(EmbedHelp)
 	}
 
