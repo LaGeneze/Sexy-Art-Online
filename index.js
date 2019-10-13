@@ -1,4 +1,4 @@
-const Discord = require('Discord.js')
+const Discord = require('discord.js')
 const bot = new Discord.Client()
 const rando_imgs_Asuna = [
 'https://pbs.twimg.com/media/D-Ko1AVX4AIZrHH',
