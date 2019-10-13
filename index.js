@@ -7,7 +7,7 @@ var NombreImageSinon = 7;
 var NombreImageAlice = 3;
 var NombreImageLisbeth = 5;
 var NombreImageYuuki = 3;
-var NomreImageSilica = 7;
+var NombreImageSilica = 7;
 var NombreImageAll = 7;
 
 var NombreAleatoireAsuna = Math.floor(Math.random() * NombreImageAsuna);
@@ -451,6 +451,7 @@ bot.on('message', function (message){
 						NombreAleatoireSilica = ''
 						NombreAleatoireSilica = Math.floor(Math.random() * NombreImageSilica)
 						console.log("Variable Random effectué")
+}
 }
 }
 }
